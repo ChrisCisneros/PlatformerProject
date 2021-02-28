@@ -20,10 +20,10 @@ public class Game : MonoBehaviour
      float timer = 375;
 
     public Text scoreText;
-    int score = 0;
+    public int score = 0;
 
     public Text coinText;
-    int coinAmount = 0;
+    public int coinAmount = 0;
     
 
 
@@ -61,10 +61,7 @@ public class Game : MonoBehaviour
                 }
                 if(target == "Question(Clone) (UnityEngine.BoxCollider)")
                 {
-                    score += 200;
-                    scoreText.text = score.ToString();
-                    coinAmount++;
-                    coinText.text = coinAmount.ToString();
+                    
                 }
                 
                 
@@ -73,7 +70,12 @@ public class Game : MonoBehaviour
             
         }
     }
+    public void hitBrick()
+    {
+        score += 100;
+        scoreText.text = score.ToString();
+    }
 
-   
-   
+
+
 }
