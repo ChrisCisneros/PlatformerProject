@@ -404,7 +404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1-1
+  m_Text: 1-0
 --- !u!222 &416364644
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2106,6 +2106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feecc7c2701ddf24fbdafdd31d75a546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reference: {fileID: 0}
   Rock: {fileID: 557822497}
   Brick: {fileID: 1588954578}
   QuestionBox: {fileID: 538485288}
@@ -2116,6 +2117,7 @@ MonoBehaviour:
   coinText: {fileID: 1569308074}
   coinAmount: 0
   results: {fileID: 1758585853}
+  gameOver: 0
   rayLength: 0
   layermask:
     serializedVersion: 2

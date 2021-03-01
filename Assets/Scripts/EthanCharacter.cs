@@ -41,6 +41,13 @@ public class EthanCharacter : MonoBehaviour
 
             //move character
             transform.Translate(-transform.right * horizontal * modifier * Time.deltaTime);
+
+            if(Input.GetKey(KeyCode.LeftShift))
+            {
+                
+                animator.SetFloat("Speed", Mathf.Abs(horizontal) * 1.5f);
+                transform.Translate(-transform.right * horizontal * modifier * Time.deltaTime);
+            }
         }
   }
 
